@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>
+            Short it - URL Shortner
+        </title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+        
+    </head>
+    <body style="background:url({% static 'background.jpg' %})">
+        <div class="heading">{{title}}</div>
+        <div class="content">
+            <form action="." method="POST">
+                {% csrf_token %}
+            <!-- <input type="text" name="url" placeholder="enter your URL">
+            <input type="submit" value="short_it"> -->
+                    <div class= "textbox" >
+                    {{form.as_p}}
+                    </div>
+                    <input type="submit" value="Shorten It!" class="submitButton">
+            </form>
+            {% if shortened_url %}
+            <a href="{{ shortened_url }}">{{ shortened_url }}</a>
+            {% endif %}
+        </div>
+    </body>
+</html>

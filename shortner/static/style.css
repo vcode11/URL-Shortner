@@ -1,0 +1,38 @@
+body{
+    background:blue;
+}
+.heading{
+    font-size:60px;
+    font-family: 'Fredoka One', cursive;
+    margin-left:38%;
+    margin-top:10%;
+}
+a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+}
+.content{
+    margin-top:2%;
+    margin-left:40%;
+}
+input{
+    margin:1%;
+    height: 15%;
+    width: 50%;
+    margin-left:-15%;
+}
+.submitButton{
+    height: 12%;
+    width: 15%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:3%;
+    color:black;
+
+}
