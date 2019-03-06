@@ -14,15 +14,13 @@
         <div class="content">
             <form action="." method="POST">
                 {% csrf_token %}
-            <!-- <input type="text" name="url" placeholder="enter your URL">
-            <input type="submit" value="short_it"> -->
                     <div class= "textbox" >
                     {{form.as_p}}
                     </div>
                     <input type="submit" value="Shorten It!" class="submitButton">
             </form>
             {% if shortened_url %}
-            <a href="{{ shortened_url }}">{{ shortened_url }}</a>
+            <a href="{{ shortened_url }}" target="_blank">{{ shortened_url }}</a>
             {% endif %}
         </div>
     </body>

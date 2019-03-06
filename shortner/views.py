@@ -12,11 +12,9 @@ def index(request):
             'form':form,
             'title':'URL Shortner'
         } 
-    if request.method == "POST":
+    else:
         form = SubmitURLForm(request.POST)
         if form.is_valid():
-            print(form.cleaned_data)
-            print(form.cleaned_data['URL_Field'])
             try:
                 url = URL.objects.get(full_url=form.cleaned_data['URL_Field'])
             except:

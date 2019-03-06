@@ -6,6 +6,6 @@ class URLField(CharField):
     default_validators = [URLValidator]
 
 class SubmitURLForm(forms.Form):
-    URL_Field = forms.URLField(label='')
+    URL_Field = forms.URLField(label='', widget=forms.TextInput(attrs={'placeholder':'Ex: https://facebook.com'}))
     
         

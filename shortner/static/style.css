@@ -11,6 +11,7 @@ a{
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:25px;
+    margin-left:-3%;
 }
 .content{
     margin-top:2%;
@@ -20,7 +21,7 @@ input{
     margin:1%;
     height: 15%;
     width: 50%;
-    margin-left:-15%;
+    margin-left:-12%;
 }
 .submitButton{
     height: 12%;
