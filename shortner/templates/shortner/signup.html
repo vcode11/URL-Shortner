@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Shorten It! URL Shortner</title>
+    <link rel="stylesheet" href="{% static 'signup.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background:url({% static 'background.jpg' %})">
+    <div class="heading">Sign Up</div>
+    <div class="content">
+      <div class="error">
+        {%if error_message %}
+        {{ error_message }}
+        {% endif %}
+      </div>
+        <form action="." method="POST">
+          {% csrf_token %}
+          <div class="textbox">
+            {{ form.as_p }}
+          </div>
+          <input
+            type="submit" value="Sign up" name="Sign up" class="submitButton"/>
+        </form>
+        <br>
+        <span  class="error">Already Have an account?</span>
+        <a href="{%url 'shortner:login' %}" class="error" id="signin" style="margin-left:34%;font-size:25px;font-family:Arial, Helvetica, sans-serif;">Sign in</a>
+      </div>
+  </body>
+</html>

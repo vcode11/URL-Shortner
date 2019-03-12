@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'login.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+        <title> Shorten It! URL Shortner</title>
+    </head>
+    <body style="background:url({% static 'background.jpg' %})">
+        <div class="heading">URL Shortner</div>
+        <br>
+        <div class="content">
+            <form action='.', method="POST">
+                {% csrf_token %}
+                <input type="text" placeholder="Username" name="Username" class="textbox"></input>
+                <br>
+                <input type="password" placeholder="Password" name="Password" class="textbox"></input>
+                <br>
+                <input type="submit" value="Login" class="submitButton">
+                <br><br>
+                 <a href="{%url 'shortner:signup' %}">Don't have an account? Sign Up</a>
+            </form>
+            {%if could_not_log_in %}
+            <p class="error">Either username or password is incorrect</p>
+            <a href="/forgot_password">Forgot Password?</a>
+            {% endif %}
+        </div>
+    </body>
+</html>

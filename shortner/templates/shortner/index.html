@@ -10,6 +10,11 @@
         
     </head>
     <body style="background:url({% static 'background.jpg' %})">
+        <div>
+            <a href="{% url 'shortner:userlogout'%}" style="margin-left:94%;font-family:Arial, Helvetica, sans-serif;">
+                Logout
+            </a>
+        </div>
         <div class="heading">{{title}}</div>
         <div class="content">
             <form action="." method="POST">

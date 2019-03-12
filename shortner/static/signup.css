@@ -1,0 +1,62 @@
+body{
+    background:url({% static 'background.jpg' %});
+}
+.error{
+    margin-left:25%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:white;
+}
+.heading{
+    font-size:50px;
+    font-family: 'Fredoka One', cursive;
+    margin-left:44%;
+    margin-top:8%;
+    color:whitesmoke;
+}
+a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    margin-left:-3%;
+}
+.content{
+    padding-left:35%;
+    width:35%;    
+}
+input{
+    width:80%;
+    border:none;
+    border-radius: 10px;
+    height: 40px;
+}
+input:focus{
+    transition-duration: 0.6s;
+    border:2px groove steelblue;
+}
+label{
+    display: block;
+    margin:1%;
+    height: 15%;
+    margin-left:-12%;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    color:rgb(255, 255,255);
+}
+.submitButton{
+    height: 12%;
+    width: 20%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:3%;
+    color:black;
+    margin-left:30%;
+
+}
