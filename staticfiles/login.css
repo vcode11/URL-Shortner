@@ -1,0 +1,49 @@
+body{
+    background:url({% static 'background.jpg' %});
+}
+.heading{
+    font-size:60px;
+    font-family: 'Fredoka One', cursive;
+    margin-left:38%;
+    margin-top:10%;
+    color:whitesmoke;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    color:white;
+}
+.error{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+    font-style: italic;
+    color:whitesmoke;
+}
+.submitButton{
+    height: 12%;
+    width: auto;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:8%;
+    color:black;
+
+}
+.content{
+    margin-bottom:1%;
+    width:auto;
+    margin-left:40%;
+}
+label{
+    margin-bottom:1%;
+    padding-right:10px;
+}
+input{
+    width:25%;
+    margin: 1%;
+}

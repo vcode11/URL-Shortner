@@ -11,7 +11,7 @@ from .code_generator import generate
 @login_required(login_url='/login/')
 def index(request):
     if request.method == "GET":
-        form = SubmitURLForm(request.GET)
+        form = SubmitURLForm()
         context = {
             'form': form,
             'title': 'URL Shortner'
@@ -89,7 +89,7 @@ def userlogout(request):
 
 def usersignup(request):
     if request.method == 'GET':
-        form = SignupForm(request.GET)
+        form = SignupForm()
         return render(request, 'shortner/signup.html', {'form': form})
     else:
         form = SignupForm(request.POST)
