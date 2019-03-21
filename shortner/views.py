@@ -28,7 +28,7 @@ def index(request):
                 context = {
                     'form': form,
                     'title': 'URL Shortner',
-                    'shortened_url': 'http://127.0.0.1:8000/'+code,
+                    'shortened_url': 'https://tiny-url-service.herokuapp.com/' + code,
                 }
                 return render(request, 'shortner/index.html', context)
             while True:
@@ -43,7 +43,7 @@ def index(request):
         context = {
             'form': form,
             'title': 'URL Shortner',
-            'shortened_url': 'http://127.0.0.1:8000/' + code,
+            'shortened_url': 'https://tiny-url-service.herokuapp.com/' + code,
         }
     return render(request, 'shortner/index.html', context)
 
