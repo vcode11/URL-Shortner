@@ -9,6 +9,8 @@ Activating the virtual environment:<br>
 Clone the repo:<br>
 git clone https://github.com/vcode11/URL-Shortner<br>
 cd URL-Shortner<br>
-pip install -r requirements.txt<br>
+pip install -r requirements.txt
+Run Server:
+python3 manage.py runserver
 <hr>
 PRs are welcome.
